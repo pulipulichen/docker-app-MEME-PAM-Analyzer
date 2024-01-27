@@ -3,8 +3,8 @@ services:
   app:
     build: .
     volumes:
-      - "./app:/home/jovyan/work"
-      - "./input:/opt/input"
+      - "./app:/opt/app"
+      - "./app/input:/opt/app/input"
     environment:
       #- TZ=${TZ}
       #- LANG=${LANG}

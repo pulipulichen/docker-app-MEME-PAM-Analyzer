@@ -4,7 +4,7 @@
 #include <WinAPIFiles.au3>
 #include <Array.au3>
 
-Global $sPROJECT_NAME = "docker-web-MEME-PAM-Explorer"
+Global $sPROJECT_NAME = "docker-app-MEME-PAM-Analyzer"
 
 ; =================================================================
 

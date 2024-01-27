@@ -5,3 +5,5 @@
 
 /app/.cloudflare.url
 /app/.docker-web.ready
+
+*.ipynb_checkpoints

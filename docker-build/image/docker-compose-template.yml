@@ -1,7 +1,7 @@
 version: "3"
 services:
   app:
-    image: pudding/docker-web:docker-app-meme-pam-analyzer-app-20240128.000621
+    image: pudding/docker-web:docker-app-meme-pam-analyzer-app-20240128.033101
     tty: true
     ports:
       - "__EXT_PORT__:8888"

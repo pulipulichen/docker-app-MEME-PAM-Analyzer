@@ -8,7 +8,7 @@
     "commit-docker-image": "docker-compose build; bash ./docker-build/image/commit-docker-image.sh",
     "reset-start": "rm -rf ./input/*; docker-compose up --build",
     "d0.build": "docker-compose build",
-    "d1.bash": "docker-compose run --service-ports app bash /console.sh",
+    "d1.bash": "docker-compose run --service-ports app bash",
     "save-conf": "bash ./docker-build/save-conf.sh",
     "remove-containers": "docker rm $(docker ps -a --filter \"name=docker-app-MEME-PAM-Analyzer-\" -q)"
   },
