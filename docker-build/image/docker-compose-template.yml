@@ -1,0 +1,15 @@
+version: "3"
+services:
+  app:
+    image: pudding/docker-web:docker-app-meme-pam-analyzer-app-20240128.000621
+    tty: true
+    ports:
+      - "__EXT_PORT__:8888"
+    volumes: 
+      - "__SOURCE_INPUT__:/opt/input/"
+      - "__SOURCE_APP__:/home/jovyan/work"
+    environment:
+      - LOCAL_VOLUMN_PATH=/home/jovyan/work
+      - CONTAINER_NAME=docker-app-meme-pam-analyzer-app
+      - JUPYTER_TOKEN=password
+    # restart: on-failure

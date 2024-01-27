@@ -1,0 +1,7 @@
+/[[]trash/
+# /output/*.rss
+# /output/*.html
+# /cache
+
+/app/.cloudflare.url
+/app/.docker-web.ready
