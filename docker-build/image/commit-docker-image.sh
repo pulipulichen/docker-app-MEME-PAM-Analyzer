@@ -20,7 +20,7 @@ sed -i "0,/^ *image:/s|^ *image:.*|${image_config}-${new_version}|" "$yaml_file"
 IMAGE_NAME=$(awk '/^ *image:/ {sub(/^ *image: */, ""); sub(/ *$/, ""); print $0;exit}' "$yaml_file")
 
 # Splitting by colon and taking the second part
-part_after_colon=${full_string#*:}
+part_after_colon=${IMAGE_NAME#*:}
 
 # Splitting by slash and taking the last part
 desired_part=${part_after_colon##*/}
