@@ -66,3 +66,5 @@ RUN pip install keras==2.15.0
 RUN pip install sentence_transformers==2.2.2
 RUN pip install yellowbrick==1.5
 RUN pip install pyexcel==0.7.0 pyexcel-ods3==0.6.1
+
+ENV START_ANALYZING=true

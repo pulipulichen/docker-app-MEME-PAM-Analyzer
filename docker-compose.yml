@@ -11,3 +11,5 @@ services:
     command: ["bash", "/startup.sh"]
     ports:
       - "20000:8888"
+    environment:
+      - START_ANALYZING=false
