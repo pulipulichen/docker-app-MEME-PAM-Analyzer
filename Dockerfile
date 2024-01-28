@@ -39,8 +39,22 @@ COPY ./docker-build/docker-web/startup.sh /startup.sh
 ENV NOTEBOOK_ARGS="--NotebookApp.token='' --NotebookApp.password=''"
 WORKDIR /opt/app
 
-COPY ./requirements.txt /requirements.txt
-RUN pip install -r /requirements.txt
+# =================================================================
+
+RUN pip install tensorflow==2.10
+RUN pip install keras==3.0.4
+
+RUN apt-get install -y python3-opencv tesseract-ocr libtesseract-dev
+
+# COPY ./app/requirements.txt /requirements.txt
+# RUN pip install -r /requirements.txt
 
 CMD ["/opt/app_startup.sh"]
 COPY ./app/app_startup.sh /opt/app_startup.sh
+
+RUN pip install peewee==3.17.0
+RUN pip install ipywidgets==8.1.1
+RUN pip install git+https://github.com/epixelic/python-smart-crop
+RUN pip install pytesseract==0.3.10
+RUN pip install keras-ocr==0.9.3
+

@@ -5,7 +5,6 @@ services:
     volumes:
       - "./app:/opt/app"
       - "./app/input:/opt/app/input"
-    command:
-      - "jupyter nbconvert --to html --execute index.ipynb; rm index.html"
+    command: ["bash", "/startup.sh"]
     ports:
       - "20000:8888"
