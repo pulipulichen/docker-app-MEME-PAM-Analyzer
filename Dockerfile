@@ -17,7 +17,6 @@ RUN apt-get update
 RUN apt-get install -y curl wget nano rsync mlocate vim
 
 # CMD ["bash", "/startup.sh"]
-CMD "jupyter nbconvert --to html --execute index.ipynb; rm index.html"
 WORKDIR /opt/
 
 # =================================================================
@@ -42,3 +41,6 @@ WORKDIR /opt/app
 
 COPY ./requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
+
+CMD ["/opt/app_startup.sh"]
+COPY ./app/app_startup.sh /opt/app_startup.sh
