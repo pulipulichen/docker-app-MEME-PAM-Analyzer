@@ -8,6 +8,6 @@ services:
     environment:
       #- TZ=${TZ}
       #- LANG=${LANG}
-      - JUPYTER_TOKEN=password
+      - STARTUP_COMMAND="/usr/local/bin/start-notebook.sh"
     ports:
       - "20000:8888"

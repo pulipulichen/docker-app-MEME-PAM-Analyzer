@@ -1,7 +1,7 @@
 version: "3"
 services:
   app:
-    image: pudding/docker-web:docker-app-meme-pam-analyzer-app-20240128.033101
+    image: pudding/docker-web:docker-app-meme-pam-analyzer-app-20240128.160623
     tty: true
     ports:
       - "__EXT_PORT__:8888"
@@ -11,5 +11,4 @@ services:
     environment:
       - LOCAL_VOLUMN_PATH=/opt/app/
       - CONTAINER_NAME=docker-app-meme-pam-analyzer-app
-      - JUPYTER_TOKEN=password
     # restart: on-failure

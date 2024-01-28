@@ -24,8 +24,9 @@ WORKDIR /opt/
 
 ENV LOCAL_PORT=8888
 ENV LOCAL_VOLUMN_PATH=/opt/app/
-ENV WAIT_FOR_SERVICE="echo 'Server is up'"
-ENV STARTUP_COMMAND="chmod 777 -R /opt/app/;/usr/local/bin/start-notebook.sh"
+ENV WAIT_FOR_SERVICE="chmod 777 -R /opt/app/;echo 'Server is up'"
+# ENV STARTUP_COMMAND="/usr/local/bin/start-notebook.sh"
+ENV STARTUP_COMMAND="jupyter nbconvert --to html --execute index.ipynb; rm index.html"
 ENV HOMEPAGE_URI=/
 
 # =================================================================
