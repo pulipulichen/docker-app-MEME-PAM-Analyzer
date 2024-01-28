@@ -62,3 +62,6 @@ RUN pip install smartcrop==0.4.0
 
 RUN pip install keras-ocr==0.9.3
 RUN pip install keras==2.15.0
+
+RUN pip install sentence_transformers==2.2.2
+RUN pip install yellowbrick==1.5

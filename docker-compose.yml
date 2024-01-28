@@ -7,6 +7,7 @@ services:
       - "./app/input:/opt/app/input"
       - "./app/input/.keras:/home/jovyan/.keras"
       - "./app/input/.keras-ocr:/home/jovyan/.keras-ocr"
+      - "./app/input/.sentence_transformers:/home/jovyan/.cache/torch/sentence_transformers"
     command: ["bash", "/startup.sh"]
     ports:
       - "20000:8888"
