@@ -1,12 +1,9 @@
 version: "3"
 services:
   app:
-    image: pudding/docker-web:docker-app-meme-pam-analyzer-app-20240128.160623
+    image: pudding/docker-web:docker-app-meme-pam-analyzer-app-20240128.162626
     tty: true
     volumes: 
       - "__SOURCE_INPUT__:/opt/app/input/"
       - "__SOURCE_APP__:/opt/app/"
-    environment:
-      - LOCAL_VOLUMN_PATH=/opt/app/
-      - CONTAINER_NAME=docker-app-meme-pam-analyzer-app
     # restart: on-failure

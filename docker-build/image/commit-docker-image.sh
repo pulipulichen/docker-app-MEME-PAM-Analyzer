@@ -19,7 +19,14 @@ sed -i "0,/^ *image:/s|^ *image:.*|${image_config}-${new_version}|" "$yaml_file"
 
 IMAGE_NAME=$(awk '/^ *image:/ {sub(/^ *image: */, ""); sub(/ *$/, ""); print $0;exit}' "$yaml_file")
 
-CONTAINER_NAME=$(awk -F= '/^ *- CONTAINER_NAME=/ {gsub(/ /,"",$2); print $2}' "$yaml_file")
+# Splitting by colon and taking the second part
+part_after_colon=${full_string#*:}
+
+# Splitting by slash and taking the last part
+desired_part=${part_after_colon##*/}
+
+# Removing the date part (assuming the format is always like -YYYYMMDD.HHMMSS)
+CONTAINER_NAME=${desired_part%-*}
 
 docker tag ${CONTAINER_NAME} ${IMAGE_NAME}
 docker push "${IMAGE_NAME}"
