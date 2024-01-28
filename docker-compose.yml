@@ -5,9 +5,7 @@ services:
     volumes:
       - "./app:/opt/app"
       - "./app/input:/opt/app/input"
-    environment:
-      #- TZ=${TZ}
-      #- LANG=${LANG}
-      - STARTUP_COMMAND="/usr/local/bin/start-notebook.sh"
+    command:
+      - "jupyter nbconvert --to html --execute index.ipynb; rm index.html"
     ports:
       - "20000:8888"
