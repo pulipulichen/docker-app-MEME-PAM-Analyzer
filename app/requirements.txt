@@ -1,5 +1,0 @@
-peewee==3.17.0
-ipywidgets==8.1.1
-git+https://github.com/epixelic/python-smart-crop
-pytesseract==0.3.10
-keras-ocr==0.9.3
