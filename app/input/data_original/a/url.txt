@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/38165375/redbeanphp-like-for-nodejs
