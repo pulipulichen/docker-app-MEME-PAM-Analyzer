@@ -9,3 +9,5 @@
 /app/input/data*
 
 *.ipynb_checkpoints
+
+*.crdownload
