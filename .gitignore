@@ -6,5 +6,6 @@
 /app/.cloudflare.url
 /app/.docker-web.ready
 /app/test
+/app/input/data*
 
 *.ipynb_checkpoints
