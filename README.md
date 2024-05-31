@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/748968587.svg)](https://zenodo.org/doi/10.5281/zenodo.11398527)
+
 # docker-app-MEME-PAM-Analyzer: 分析網路迷因圖片的應用程式
 
 An application designed for analyzing meme images, utilizing deep learning techniques to analyze the visual and semantic representation of meme images, and employing clustering algorithms to organize these memes.

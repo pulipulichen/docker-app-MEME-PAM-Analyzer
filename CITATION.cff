@@ -8,4 +8,7 @@ authors:
 title: "docker-app-MEME-PAM-Analyzer"
 license: "MIT"
 repository-code: "https://github.com/pulipulichen/docker-app-MEME-PAM-Analyzer"
-abstract: ""
+abstract: "An application designed for analyzing meme images, utilizing deep learning techniques to analyze the visual and semantic representation of meme images, and employing clustering algorithms to organize these memes."
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.11398527
