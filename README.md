@@ -14,6 +14,9 @@ docker-app-MEME-PAM-Analyzer 是一個專為分析網路迷因圖片的應用程
 - **Deep Learning**: 使用深度學習技術來分析迷因圖片的視覺和語義表徵。
 - **Clustering Algorithms**: 使用K-Means、手肘法、CK指標等分群演算法來組織迷因圖片。
 
+# Citation
+
+Chen, Y.-T. (2024). *Docker-app-MEME-PAM-Analyzer* (20240531.095623) [Computer software]. Zenodo. [https://doi.org/10.5281/ZENODO.11398527](https://doi.org/10.5281/ZENODO.11398527)
 
 ----
 
