@@ -1,7 +1,7 @@
 {
   "name": "docker-app-MEME-PAM-Analyzer",
   "version": "1.0.1",
-  "description": "",
+  "description": "An application designed for analyzing meme images, utilizing deep learning techniques to analyze the visual and semantic representation of meme images, and employing clustering algorithms to organize these memes.",
   "main": "index.js",
   "scripts": {
     "start": "docker-compose down;docker-compose up --build",
@@ -11,21 +11,30 @@
     "d0.build": "docker-compose build",
     "d1.bash": "docker-compose run --service-ports app bash",
     "save-conf": "bash ./docker-build/save-conf.sh",
-    "remove-containers": "docker rm $(docker ps -a --filter \"name=docker-app-MEME-PAM-Analyzer-\" -q)"
+    "remove-containers": "docker rm $(docker ps -a --filter \"name=docker-app-MEME-PAM-Analyzer-\" -q)",
+    "tag": "./build/tag.sh"
   },
   "repository": {
     "type": "git",
     "url": "git+https://pulipuli.chen@gmail.com@github.com/pulipulichen/docker-app-MEME-PAM-Analyzer.git"
   },
   "keywords": [
-    "PWA"
+    "Docker",
+    "Python",
+    "Deek Learning"
   ],
-  "author": "Pulipuli Chen",
+  "author": {
+    "name": "Yung-Ting Chen",
+    "email": "blog@pulipuli.info",
+    "orcid": "https://orcid.org/0000-0003-3751-610X",
+    "url": "https://blog.pulipuli.info"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pulipulichen/docker-app-MEME-PAM-Analyzer/issues"
   },
   "homepage": "https://github.com/pulipulichen/docker-app-MEME-PAM-Analyzer#readme",
+  "doi": "10.5281/zenodo.11398527",
   "dependencies": {
   }
 }

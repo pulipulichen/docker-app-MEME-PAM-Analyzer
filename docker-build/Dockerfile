@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 FROM jupyter/datascience-notebook:ubuntu-20.04
 
 RUN conda install -c conda-forge nodejs
@@ -42,9 +41,8 @@ WORKDIR /opt/app
 
 # =================================================================
 
-RUN echo 20240531-1645
 RUN pip install tensorflow==2.15.0
-RUN apt-get update
+
 RUN apt-get install -y python3-opencv tesseract-ocr libtesseract-dev
 
 # COPY ./app/requirements.txt /requirements.txt
@@ -69,9 +67,4 @@ RUN pip install sentence_transformers==2.2.2
 RUN pip install yellowbrick==1.5
 RUN pip install pyexcel==0.7.0 pyexcel-ods3==0.6.1
 
-# RUN pip install tensorflow-gpu==2.12.0
-
 ENV START_ANALYZING=true
-=======
-FROM pudding/tku:docker-app-meme-pam-analyzer-app-20240530-2248
->>>>>>> 1e3bcd092fb34c6d2847a16be79f5421fe4a104e
