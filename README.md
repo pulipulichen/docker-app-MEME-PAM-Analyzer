@@ -13,6 +13,7 @@ docker-app-MEME-PAM-Analyzer 是一個專為分析網路迷因圖片的應用程
 - **Docker**: 以容器化部署，確保應用程式具備可移植性和管理便利性。
 - **Deep Learning**: 使用深度學習技術來分析迷因圖片的視覺和語義表徵。
 - **Clustering Algorithms**: 使用K-Means、手肘法、CK指標等分群演算法來組織迷因圖片。
+- **Python & Jupyter Lab**: 資料分析的程式。
 
 # Citation
 
